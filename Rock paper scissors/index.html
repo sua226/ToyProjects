@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="icon" href="./img/scissors.png">
+    <title>가위바위보</title>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div class="board-wrap">
+        <div class="board">
+
+            <div id="main" class="main">
+                <div class="main-title">안내문진거 가위바위보</div>
+
+                <div>
+                    <img src="./img/rock.png">
+                    <img src="./img/scissors.png">
+                    <img src="./img/paper.png">
+                </div>
+
+                <div class="main-text">먼저 3점을 얻으면 승리</div>
+                <button id="start_btn" class="start-btn"> START </button>
+            </div>
+            
+
+            <div id="game" class="game">
+                <div class="score-wrap">
+                    <div class="user-score-wrap">
+                        <span class="name-title">
+                            YOU
+                        </span>
+                        <span id="user_score" class="score-title"> 0 </span> 
+                    </div>
+                    <span class="colon"> : </span>
+                    <div class="com-score-wrap">
+                        <span class="name-title">
+                            COM
+                        </span> 
+                        <span id="com_score"  class="score-title">0</span>  
+                    </div>
+                </div>
+
+                <div>
+                    <img id="com_result" src="./img/question.png">
+                </div>
+
+                <div id="timer_wrap" class="timer-wrap">
+                    <span id="timer_1">
+                        ○
+                    </span>
+                    <span id="timer_2">
+                        ○
+                    </span>
+                    <span id="timer_3">
+                        ○
+                    </span>
+                </div>
+
+                <div>
+                    <img id="user_result" src="./img/question.png">
+                </div>
+
+                <div id="winner" class="winner">
+                    <div class="emoji">
+                        🎉🥳🎉
+                    </div>
+                    <div class="main-title">승리하였습니다!</div>
+                </div>
+
+                <div id="loser"  class="loser">
+                    <div class="emoji">
+                        💦😭💦
+                    </div>
+                    <div class="main-title">패배하였습니다...</div>
+                </div>
+
+                <div class="game-btn-wrap">
+                    <button id="scissors_btn" class="scissors-btn"> 가위 </button>
+                    <button id="rock_btn" class="rock-btn"> 바위 </button>
+                    <button id="paper_btn" class="paper-btn"> &nbsp;보&nbsp; </button>
+                    <button id="next_btn" class="next-btn" > 다음 </button>
+                    <button id="main_btn" class="main-btn" > 메인으로 </button>
+                </div>
+            </div>
+        </div>
+        
+        <span class="copyright">ⓒ 2024. MINSUA All rights reserved.</span>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
