@@ -7,10 +7,10 @@ const main_btn = document.getElementById('main_btn');
 var user_result = 3, com_result = 3;
 var user_score = 0, com_score = 0;
 
-window.onload = function(){
+$(document).ready(function(){
     $("#game, #winner, #loser").hide();
     $('#next_btn, #main_btn').hide();
-}
+});
 
 
 start_btn.addEventListener('click', function() {
